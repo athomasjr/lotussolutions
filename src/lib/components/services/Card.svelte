@@ -1,6 +1,6 @@
 <script>
-	import * as S from './cardStyles';
 	import bullet from '../../../assets/bullet.svg';
+	import * as S from './cardStyles';
 	export let name;
 	export let icon;
 	export let description;

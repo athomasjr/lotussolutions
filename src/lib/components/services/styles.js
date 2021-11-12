@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-import { FONTS, COLORS } from '../../../styles/constants';
+import { COLORS, FONTS } from '../../../styles/constants';
 
 const { body, title } = FONTS;
 const { primary } = COLORS;
@@ -11,8 +11,8 @@ export const Container = css`
 	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: repeat(auto-fit, 1fr);
 	gap: 0px 0px;
-	background: linear-gradient(90deg, #ece9e6 -1.11%, #ffffff 100%);
-	box-shadow: 0px 4px 4px rgba(47, 46, 56, 0.25);
+	${'' /* background: linear-gradient(90deg, #ece9e6 -1.11%, #ffffff 100%); */}
+	${'' /* box-shadow: 0px 4px 4px rgba(47, 46, 56, 0.25); */}
 `;
 
 // Header area
