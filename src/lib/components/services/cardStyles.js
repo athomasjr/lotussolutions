@@ -18,7 +18,8 @@ export const Wrapper = css`
 
 	order: 1;
 	flex-grow: 0;
-	margin: 8px 56px;
+
+	margin: 3rem 56px;
 
 	@media (max-width: 999px) {
 		max-width: 250px;

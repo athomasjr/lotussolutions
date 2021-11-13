@@ -8,7 +8,7 @@ export const Container = css`
 	min-height: 100vh;
 	display: grid;
 	grid-auto-columns: 1fr;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(auto-fit, 1fr);
 	grid-template-rows: repeat(auto-fit, 1fr);
 	gap: 0px 0px;
 	${'' /* background: linear-gradient(90deg, #ece9e6 -1.11%, #ffffff 100%); */}
@@ -17,7 +17,7 @@ export const Container = css`
 
 // Header area
 export const Header = css`
-	grid-column: 1/5;
+	grid-column: 1/6;
 	grid-row: 1;
 	justify-self: center;
 	align-self: center;
@@ -26,7 +26,7 @@ export const Header = css`
 	}
 	@media (max-width: 899px) {
 		padding: 8px;
-		grid-column: 1/6;
+		grid-column: 1/7;
 	}
 	@media (max-width: 599px) {
 		grid-column: 1/7;
@@ -55,6 +55,7 @@ export const Explore = css`
 	align-self: center;
 	@media (max-width: 899px) {
 		justify-self: flex-end;
+		grid-column: 5/7;
 	}
 	@media (max-width: 599px) {
 		grid-column: 3/7;
@@ -62,7 +63,7 @@ export const Explore = css`
 `;
 
 export const Btn = css`
-	padding: 12px 16px;
+	padding: 8px 12px;
 	background-color: transparent;
 	border: 1px solid ${primary};
 	text-decoration: none;
@@ -76,6 +77,9 @@ export const Btn = css`
 	line-height: 28px;
 	color: #2f2e38;
 
+	@media (max-width: 1200px) {
+		padding: 5px;
+	}
 	@media (max-width: 899px) {
 		font-size: 14px;
 		padding: 5px;
