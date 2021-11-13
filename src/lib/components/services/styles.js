@@ -56,7 +56,6 @@ export const Btn = css`
 	background-color: transparent;
 	border: 1px solid ${primary};
 	text-decoration: none;
-	/* small shadow */
 
 	filter: $sm-dark;
 	border-radius: 4px;
@@ -65,21 +64,6 @@ export const Btn = css`
 	font-size: 16px;
 	line-height: 28px;
 	color: #2f2e38;
-
-	@media (max-width: 1200px) {
-		padding: 5px;
-	}
-	@media (max-width: 899px) {
-		font-size: 14px;
-		padding: 5px;
-	}
-	@media (max-width: 599px) {
-		font-size: 14px;
-		padding: 5px;
-	}
-	@media (max-width: 320px) {
-		display: none;
-	}
 `;
 
 // Cards
@@ -89,12 +73,7 @@ export const Services = css`
 	place-self: center;
 	display: flex;
 	flex-wrap: wrap;
-	@media (max-width: 999px) {
-		justify-content: center;
-	}
-	@media (max-width: 599px) {
-		justify-content: center;
-	}
+	justify-content: center;
 `;
 
 // Slider
