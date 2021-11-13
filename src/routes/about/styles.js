@@ -40,26 +40,34 @@ export const Border = css`
 `;
 
 export const Person1 = css`
-	grid-column: 1/4;
+	grid-column: 1/8;
 	grid-row: 3;
-	place-self: center;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 3rem 3rem 0 3rem;
+	@media (max-width: 982px) {
+		justify-content: center;
+		margin: 0;
+	}
 `;
-export const Person1Div = css`
-	grid-column: 4/7;
-	grid-row: 3;
-	place-self: center;
-`;
-
-export const Person2Div = css`
-	grid-column: 2/5;
-	grid-row: 4;
-	place-self: center;
+export const Info = css`
+	margin: 3rem;
+	@media (max-width: 982px) {
+		order: 1 !important;
+	}
 `;
 
 export const Person2 = css`
-	grid-column: 5/8;
+	grid-column: 1/8;
 	grid-row: 4;
-	place-self: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	margin: 0 3rem 3rem 3rem;
+	@media (max-width: 982px) {
+		justify-content: center;
+		margin: 0;
+	}
 `;
 
 export const Founder = css`
@@ -72,17 +80,15 @@ export const Founder = css`
 	background-origin: border-box;
 	background-clip: content-box, border-box;
 	position: relative;
+	@media (max-width: 982px) {
+		order: 0 !important;
+	}
 `;
 
 export const Face = css`
 	width: 280px;
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	top: 10%;
-	left: -1rem;
-	right: 3;
-	text-align: center;
+	margin-left: -0.8rem;
+	margin-top: 10%;
 `;
 
 export const Name = css`
@@ -104,6 +110,7 @@ export const Description = css`
 export const Button = css`
 	background: linear-gradient(90deg, #ff416c 2.28%, #ff4b2b 100%);
 	border-radius: 4px;
+	border: none;
 	padding: 8px 16px;
 	font-size: 16px;
 	color: #fff;

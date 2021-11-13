@@ -15,18 +15,6 @@
 		<div class={S.Header}>
 			<span class={Title}>Get To <span>Know <span class={S.Border}>Us</span></span></span>
 		</div>
-		<div class={S.Person1}>
-			<div class={S.Founder}><img src={eric} alt="eric" class={S.Face} /></div>
-		</div>
-		<div class={S.Person1Div}>
-			<div class={S.Name}>Eric Boisvenu</div>
-			<div class={S.Title}>Co-Founder</div>
-			<p class={S.Description}>
-				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-				been the industry's standard dummy text ever since th
-			</p>
-			<button class={S.Button}>Eric's Bio</button>
-		</div>
 		<div class={S.Story}>
 			<p />
 			t is a long established fact that a reader will be distracted by the readable content of a page
@@ -37,17 +25,30 @@
 			infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
 			(injected humour and the like).
 		</div>
-		<div class={S.Person2}>
-			<div class={S.Founder}><img src={antony} alt="eric" class={S.Face} /></div>
+		<div class={S.Person1}>
+			<div class={S.Founder}><img src={eric} alt="eric" class={S.Face} /></div>
+
+			<div class={S.Info}>
+				<div class={S.Name}>Eric Boisvenu</div>
+				<div class={S.Title}>Co-Founder</div>
+				<p class={S.Description}>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+					been the industry's standard dummy text ever since th
+				</p>
+				<button class={S.Button}>Eric's Bio</button>
+			</div>
 		</div>
-		<div class={S.Person2Div}>
-			<div class={S.Name}>Antonio Thomas</div>
-			<div class={S.Title}>Co-Founder</div>
-			<p class={S.Description}>
-				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-				been the industry's standard dummy text ever since th
-			</p>
-			<button class={S.Button}>Antonio's Bio</button>
+		<div class={S.Person2}>
+			<div class={S.Founder} style="order:1;"><img src={antony} alt="eric" class={S.Face} /></div>
+			<div class={S.Info} style="order:0;">
+				<div class={S.Name}>Antonio Thomas</div>
+				<div class={S.Title}>Co-Founder</div>
+				<p class={S.Description}>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+					been the industry's standard dummy text ever since th
+				</p>
+				<button class={S.Button}>Antonio's Bio</button>
+			</div>
 		</div>
 	</div>
 </section>
