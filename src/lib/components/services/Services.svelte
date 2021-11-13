@@ -1,6 +1,6 @@
 <script>
 	import * as S from './styles';
-	import { Title } from '$lib/utils/title';
+	import { Title } from '$styles/utils/title';
 	import Card from './Card.svelte';
 	import webSvg from '../../../assets/logo.svg';
 	import slider from '../../../assets/sliderBtn.svg';
