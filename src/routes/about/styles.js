@@ -46,7 +46,6 @@ export const Person1 = css`
 		margin: 0;
 	}
 	${MEDIA_QUERIES.tabletUp} {
-		z-index: 1000;
 		justify-content: center;
 		margin: 0;
 	}
