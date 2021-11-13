@@ -1,11 +1,8 @@
 <script>
-
-	import * as S from './styles';
+	import webSvg from '$assets/logo.svg';
+	import slider from '$assets/sliderBtn.svg';
+	import sliderGrey from '$assets/sliderBtnGrey.svg';
 	import { Title } from '$styles/utils/title';
-	import Card from './Card.svelte';
-	import webSvg from '../../../assets/logo.svg';
-	import slider from '../../../assets/sliderBtn.svg';
-	import sliderGrey from '../../../assets/sliderBtnGrey.svg';
 	import Card from './Card.svelte';
 	import * as S from './styles';
 
