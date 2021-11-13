@@ -1,5 +1,6 @@
 <script context="module">
 	export const prerender = true;
+	import Hero from '$components/hero/Hero.svelte';
 	import Services from '$components/services/Services.svelte';
 </script>
 
@@ -7,8 +8,8 @@
 	<title>Home</title>
 </svelte:head>
 
-<section>Home</section>
-<section><Services /></section>
+<Hero />
+<Services />
 
 <style>
 </style>

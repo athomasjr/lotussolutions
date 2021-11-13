@@ -2,8 +2,6 @@ import { COLORS } from '$styles/constants';
 import { css } from '@emotion/css';
 
 export const MobileHeader = css`
-	position: sticky;
-	top: 0;
 	height: 80px;
 	padding: 0 16px;
 	display: flex;

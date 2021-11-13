@@ -11,6 +11,3 @@
 {:else}
 	<MobileHeader />
 {/if}
-
-<style>
-</style>

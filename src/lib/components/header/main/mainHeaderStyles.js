@@ -1,15 +1,14 @@
-import { COLORS, ELEVATIONS, MEDIA_QUERIES } from '$styles/constants';
+import { COLORS, ELEVATIONS } from '$styles/constants';
 import { css } from '@emotion/css';
 
 export const Header = css`
-	${'' /* display: none; */}
-
-	${MEDIA_QUERIES.desktopUp} {
-		padding: 16px 126px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
+	position: sticky;
+	top: 0;
+	padding: 16px 126px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1;
 `;
 
 export const Nav = css`
@@ -52,11 +51,11 @@ export const CTA = css`
 	padding: 12px 16px;
 	border-radius: 4px;
 	color: #ffffff;
-	box-shadow: ${ELEVATIONS.smLight};
+	box-shadow: ${ELEVATIONS.smDark};
 	transition: 0.3s;
 
 	&:hover {
-		box-shadow: ${ELEVATIONS.mdLight};
+		box-shadow: ${ELEVATIONS.mdDark};
 		transform: scale(1.05);
 	}
 `;

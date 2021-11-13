@@ -11,15 +11,16 @@
 		flex-direction: column;
 
 		${MEDIA_QUERIES.desktopUp} {
-			flex: 1 0 auto;
-			min-height: calc(100vh - 200px);
+			main {
+				flex: 1 0 auto;
+				min-height: calc(100vh - 200px);
+			}
 		}
 	`;
 </script>
 
 <div class={Container}>
 	<Header />
-
 	<main>
 		<slot />
 	</main>

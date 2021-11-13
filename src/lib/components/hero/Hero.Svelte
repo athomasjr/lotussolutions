@@ -1,0 +1,20 @@
+<script>
+	import svg from '$assets/hero-svg.svg';
+	import * as S from './heroStyles';
+</script>
+
+<section>
+	<div class={S.BackgroundImg} />
+	<div class={S.Container}>
+		<div class={S.Content}>
+			<div>
+				<h1>Bringing Dreams To Life</h1>
+				<h2>Development Solutions That Bridge The Gap Between Dreams and Reality</h2>
+			</div>
+			<a class={S.CTA} href="#contact">Contact Us</a>
+		</div>
+		<div class={S.Svg}>
+			<img src={svg} alt="cartooned computer" />
+		</div>
+	</div>
+</section>
