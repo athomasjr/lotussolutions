@@ -1,36 +1,28 @@
 import { css } from '@emotion/css';
-import { COLORS, FONTS } from '../../../styles/constants';
+import { COLORS, FONTS, MEDIA_QUERIES } from '../../../styles/constants';
 
-const { body, title } = FONTS;
+const { body } = FONTS;
 const { primary } = COLORS;
 // Main Grid
 export const Container = css`
-	min-height: 100vh;
-	display: grid;
-	grid-auto-columns: 1fr;
-	grid-template-columns: repeat(auto-fit, 1fr);
-	grid-template-rows: repeat(auto-fit, 1fr);
-	gap: 0px 0px;
-	${'' /* background: linear-gradient(90deg, #ece9e6 -1.11%, #ffffff 100%); */}
-	${'' /* box-shadow: 0px 4px 4px rgba(47, 46, 56, 0.25); */}
+	display: flex;
+	flex-direction: column;
+	${MEDIA_QUERIES.tabletLandUp} {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: -0 102px;
+	}
 `;
 
 // Header area
 export const Header = css`
-	grid-column: 1/6;
+	grid-column: 1/3;
 	grid-row: 1;
-	justify-self: center;
+	justify-self: flex-start;
 	align-self: center;
-	@media (max-width: 1200px) {
-		padding: 16px;
-	}
-	@media (max-width: 899px) {
-		padding: 8px;
-		grid-column: 1/7;
-	}
-	@media (max-width: 599px) {
-		grid-column: 1/7;
-	}
+	${MEDIA_QUERIES.phoneOnly} {
+		text-align: center;
+	} ;
 `;
 
 export const Description = css`
@@ -39,26 +31,23 @@ export const Description = css`
 	line-height: 21px;
 	max-width: 486px;
 	margin-top: 16px;
-	@media (max-width: 899px) {
-		margin-top: 1.5rem;
-	}
-	@media (max-width: 599px) {
+	${MEDIA_QUERIES.phoneOnly} {
 		font-size: 14px;
-		margin-top: 1.5rem;
+		margin: 1rem 5px;
 	}
 `;
 // BTN Explore more
 export const Explore = css`
-	grid-column: 4/7;
-	grid-row: 1;
-	justify-self: center;
-	align-self: center;
-	@media (max-width: 899px) {
+	justify-content: center;
+	margin: auto;
+	${MEDIA_QUERIES.tabletUp} {
+		grid-column: 2/3;
+		grid-row: 1;
 		justify-self: flex-end;
-		grid-column: 5/7;
+		align-self: center;
 	}
-	@media (max-width: 599px) {
-		grid-column: 3/7;
+	${MEDIA_QUERIES.phoneOnly} {
+		align-self: flex-start;
 	}
 `;
 
@@ -95,7 +84,7 @@ export const Btn = css`
 
 // Cards
 export const Services = css`
-	grid-column: 1/7;
+	grid-column: 1/3;
 	grid-row: 2;
 	place-self: center;
 	display: flex;
@@ -110,7 +99,7 @@ export const Services = css`
 
 // Slider
 export const Slider = css`
-	grid-column: 1/7;
+	grid-column: 1/3;
 	grid-row: 3;
 	display: flex;
 	flex-direction: row;
