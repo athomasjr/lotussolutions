@@ -23,9 +23,9 @@
   "dependencies": {
     "@emotion/css": "^11.5.0",
     "@fontsource/exo-2": "^4.5.1",
-    "@fontsource/fira-mono": "^4.5.0",
     "@fontsource/glegoo": "^4.5.0",
     "@lukeed/uuid": "^2.0.0",
-    "cookie": "^0.4.1"
+    "cookie": "^0.4.1",
+    "normalize.css": "^8.0.1"
   }
 }

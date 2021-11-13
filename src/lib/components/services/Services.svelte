@@ -1,10 +1,13 @@
 <script>
+
 	import * as S from './styles';
 	import { Title } from '$styles/utils/title';
 	import Card from './Card.svelte';
 	import webSvg from '../../../assets/logo.svg';
 	import slider from '../../../assets/sliderBtn.svg';
 	import sliderGrey from '../../../assets/sliderBtnGrey.svg';
+	import Card from './Card.svelte';
+	import * as S from './styles';
 
 	const services = [
 		{
@@ -31,7 +34,7 @@
 	];
 </script>
 
-<section>
+<section id="#services">
 	<div class={S.Container}>
 		<div class={S.Header}>
 			<span class={Title}>Explore Our <span>Services</span></span>

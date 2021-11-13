@@ -1,9 +1,9 @@
 import { css } from '@emotion/css';
-import { FONTS, COLORS, ELEVATIONS } from '../../../styles/constants';
+import { COLORS, ELEVATIONS, FONTS } from '../../../styles/constants';
 
 const { body, title } = FONTS;
 const { dark } = COLORS;
-const { mdDark } = ELEVATIONS;
+const { mdLight } = ELEVATIONS;
 
 export const Wrapper = css`
 	display: flex;
@@ -13,11 +13,14 @@ export const Wrapper = css`
 	color: white;
 	max-width: 295px;
 	background: ${dark};
-	box-shadow: ${mdDark};
 	border-radius: 4px;
+	box-shadow: ${mdLight};
+
 	order: 1;
 	flex-grow: 0;
+
 	margin: 3rem 56px;
+
 	@media (max-width: 999px) {
 		max-width: 250px;
 	}

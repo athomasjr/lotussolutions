@@ -1,10 +1,13 @@
 <script>
+	import MainHeader from './main/MainHeader.svelte';
+	import MobileHeader from './mobile/MobileHeader.svelte';
+	let screenWidth;
 </script>
 
-<header>header</header>
+<svelte:window bind:innerWidth={screenWidth} />
 
-<style>
-	header {
-		height: 100px;
-	}
-</style>
+{#if screenWidth > 1199}
+	<MainHeader />
+{:else}
+	<MobileHeader />
+{/if}
