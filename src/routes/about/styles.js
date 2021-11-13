@@ -48,6 +48,7 @@ export const Person1 = css`
 	@media (max-width: 982px) {
 		justify-content: center;
 		margin: 0;
+		z-index: 1000;
 	}
 `;
 export const Info = css`
@@ -120,5 +121,12 @@ export const Story = css`
 	grid-column: 2/7;
 	grid-row: 2;
 	place-self: center;
-	font-size: 14px;
+	font-size: 16px;
+	font-family: ${body};
+	margin: 1rem;
+
+	@media (max-width: 599px) {
+		grid-column: 1/8;
+		margin-bottom: 0 0 2rem 0;
+	}
 `;
