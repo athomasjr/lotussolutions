@@ -7,7 +7,7 @@ const { mdDark } = ELEVATIONS;
 
 export const Container = css`
 	display: grid;
-	${MEDIA_QUERIES.desktopUp} {
+	${MEDIA_QUERIES.tabletLandUp} {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		padding: -0 102px;
