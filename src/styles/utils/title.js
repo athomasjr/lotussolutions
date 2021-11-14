@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-import { FONTS, COLORS } from '$styles/constants';
+import { FONTS, COLORS, MEDIA_QUERIES } from '$styles/constants';
 
 const { title } = FONTS;
 const { primary, dark } = COLORS;
@@ -13,16 +13,13 @@ export const Title = css`
 	& span {
 		color: ${primary};
 	}
-	@media (max-width: 1200px) {
+	${MEDIA_QUERIES.tabletLandUp} {
 		font-size: 3.6rem;
 	}
-	@media (max-width: 899px) {
+	${MEDIA_QUERIES.tabletUp} {
 		font-size: 3.2rem;
 	}
-	@media (max-width: 599px) {
-		font-size: 2rem;
-	}
-	@media (max-width: 400px) {
-		font-size: 1.5rem;
+	${MEDIA_QUERIES.phoneOnly} {
+		font-size: 3rem;
 	}
 `;

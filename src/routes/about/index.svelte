@@ -39,8 +39,8 @@
 			</div>
 		</div>
 		<div class={S.Person2}>
-			<div class={S.Founder} style="order:1;"><img src={antony} alt="eric" class={S.Face} /></div>
-			<div class={S.Info} style="order:0;">
+			<div class={S.Founder}><img src={antony} alt="eric" class={S.Face} /></div>
+			<div class={S.Info}>
 				<div class={S.Name}>Antonio Thomas</div>
 				<div class={S.Title}>Co-Founder</div>
 				<p class={S.Description}>

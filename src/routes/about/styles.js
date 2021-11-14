@@ -1,36 +1,32 @@
 import { css } from '@emotion/css';
-import { FONTS, COLORS, ELEVATIONS } from '$styles/constants';
+import { FONTS, COLORS, ELEVATIONS, MEDIA_QUERIES } from '$styles/constants';
 
 const { body, title } = FONTS;
 const { dark, primary } = COLORS;
 const { mdDark } = ELEVATIONS;
 
 export const Container = css`
-	min-height: 100vh;
 	display: grid;
-	grid-auto-columns: 1fr;
-	grid-template-columns: repeat(auto-fit, 1fr);
-	grid-template-rows: repeat(auto-fit, 1fr);
-	gap: 5px;
+	${MEDIA_QUERIES.tabletLandUp} {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: -0 102px;
+	}
 	background: linear-gradient(90deg, #ece9e6 -1.11%, #ffffff 100%);
 	box-shadow: 0px 4px 4px rgba(47, 46, 56, 0.25);
 `;
 
 // Header area
 export const Header = css`
-	grid-column: 1/5;
+	grid-column: 1/3;
 	grid-row: 1;
-	justify-self: center;
+	justify-self: flex-start;
 	align-self: center;
-	@media (max-width: 1200px) {
+	${MEDIA_QUERIES.desktopUp} {
 		padding: 16px;
 	}
-	@media (max-width: 899px) {
+	${MEDIA_QUERIES.tabletLandUp} {
 		padding: 8px;
-		grid-column: 1/7;
-	}
-	@media (max-width: 599px) {
-		grid-column: 1/7;
 	}
 `;
 
@@ -40,32 +36,46 @@ export const Border = css`
 `;
 
 export const Person1 = css`
-	grid-column: 1/8;
+	grid-column: 1/3;
 	grid-row: 3;
 	display: flex;
 	flex-wrap: wrap;
 	margin: 3rem 3rem 0 3rem;
-	@media (max-width: 982px) {
+	${MEDIA_QUERIES.phoneOnly} {
 		justify-content: center;
 		margin: 0;
-		z-index: 1000;
+	}
+	${MEDIA_QUERIES.tabletUp} {
+		justify-content: center;
+		margin: 0;
+	}
+	${MEDIA_QUERIES.tabletLandUp} {
+		justify-content: flex-start;
 	}
 `;
 export const Info = css`
+	order: 1 !important;
 	margin: 3rem;
-	@media (max-width: 982px) {
-		order: 1 !important;
+	${MEDIA_QUERIES.tabletUp} {
+		order: 0 !important;
 	}
 `;
 
 export const Person2 = css`
-	grid-column: 1/8;
+	grid-column: 1/3;
 	grid-row: 4;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-end;
 	margin: 0 3rem 3rem 3rem;
-	@media (max-width: 982px) {
+	${MEDIA_QUERIES.phoneOnly} {
+		justify-content: center;
+		margin: 0;
+	}
+	${MEDIA_QUERIES.tabletLandUp} {
+		place-self: flex-end;
+	}
+	${MEDIA_QUERIES.tabletUp} {
 		justify-content: center;
 		margin: 0;
 	}
@@ -81,9 +91,7 @@ export const Founder = css`
 	background-origin: border-box;
 	background-clip: content-box, border-box;
 	position: relative;
-	@media (max-width: 982px) {
-		order: 0 !important;
-	}
+	margin: 1.5rem;
 `;
 
 export const Face = css`
@@ -118,15 +126,12 @@ export const Button = css`
 `;
 
 export const Story = css`
-	grid-column: 2/7;
+	grid-column: 1/3;
 	grid-row: 2;
 	place-self: center;
 	font-size: 16px;
 	font-family: ${body};
 	margin: 1rem;
 
-	@media (max-width: 599px) {
-		grid-column: 1/8;
-		margin-bottom: 0 0 2rem 0;
-	}
+	margin-bottom: 3rem;
 `;
