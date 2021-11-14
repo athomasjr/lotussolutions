@@ -53,9 +53,9 @@
 				/>
 			{/each}
 		</div>
-		<div class={S.Slider}>
+		<!-- <div class={S.Slider}>
 			<img src={slider} alt="bullet" />
 			<img src={sliderGrey} alt="bullet" />
-		</div>
+		</div> -->
 	</div>
 </section>

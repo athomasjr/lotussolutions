@@ -77,14 +77,14 @@ export const Services = css`
 `;
 
 // Slider
-export const Slider = css`
-	grid-column: 1/3;
-	grid-row: 3;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: start;
-	& img {
-		margin: 24px 8px;
-	}
-`;
+// export const Slider = css`
+// 	grid-column: 1/3;
+// 	grid-row: 3;
+// 	display: flex;
+// 	flex-direction: row;
+// 	justify-content: center;
+// 	align-items: start;
+// 	& img {
+// 		margin: 24px 8px;
+// 	}
+// `;

@@ -20,13 +20,6 @@ export const Wrapper = css`
 	flex-grow: 0;
 
 	margin: 3rem 56px;
-
-	@media (max-width: 999px) {
-		max-width: 250px;
-	}
-	@media (max-width: 599px) {
-		margin: 8px 5px;
-	}
 `;
 
 export const Head = css`
@@ -57,18 +50,18 @@ export const Description = css`
 	align-items: center;
 	font-size: 18px;
 	line-height: 21px;
-	margin: 24px 0px;
+	margin: 5px 0px;
 	font-family: ${body};
 	order: 2;
 `;
 
-export const Points = css`
-	font-family: $body;
-	margin: 24px 0px;
-	order: 3;
-	font-size: 18px;
-	line-height: 21px;
-	& div {
-		margin: 12px 0;
-	}
-`;
+// export const Points = css`
+// 	font-family: $body;
+// 	margin: 24px 0px;
+// 	order: 3;
+// 	font-size: 18px;
+// 	line-height: 21px;
+// 	& div {
+// 		margin: 12px 0;
+// 	}
+// `;
