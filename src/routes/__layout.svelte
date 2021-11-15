@@ -1,7 +1,7 @@
 <script>
 	import Footer from '$components/footer/Footer.svelte';
 	import Header from '$components/header/Header.svelte';
-	import '$styles/app.css';
+	import '$styles/app.js';
 	import { MEDIA_QUERIES } from '$styles/constants';
 	import { css } from '@emotion/css';
 
