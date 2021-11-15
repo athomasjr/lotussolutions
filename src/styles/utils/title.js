@@ -5,7 +5,6 @@ const { title } = FONTS;
 const { primary, dark } = COLORS;
 
 export const Title = css`
-	font-size: 4.6rem;
 	line-height: 75px;
 	color: ${dark};
 	margin: 16px 0px;
@@ -13,13 +12,13 @@ export const Title = css`
 	& span {
 		color: ${primary};
 	}
-	${MEDIA_QUERIES.tabletLandUp} {
+	${MEDIA_QUERIES.tabletUp} {
 		font-size: 3.6rem;
 	}
-	${MEDIA_QUERIES.tabletUp} {
-		font-size: 3.2rem;
+	${MEDIA_QUERIES.desktopUp} {
+		font-size: 4.6rem;
 	}
 	${MEDIA_QUERIES.phoneOnly} {
-		font-size: 3rem;
+		font-size: 2.4rem;
 	}
 `;
