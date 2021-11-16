@@ -1,11 +1,13 @@
 <script>
 	import svg from '$assets/hero-svg.svg';
 	import * as S from './heroStyles';
+	let bgImgH;
 </script>
 
 <section>
-	<div class={S.BackgroundImg} />
-	<div class={S.Container}>
+	<div class={S.BackgroundImg} style="height:{bgImgH + 64}px" />
+
+	<div class={S.Container} bind:clientHeight={bgImgH}>
 		<div class={S.Content}>
 			<div>
 				<h1>Bringing Dreams To Life</h1>

@@ -1,5 +1,5 @@
 import heroImage from '$assets/hero-bg.jpeg';
-import { COLORS, ELEVATIONS, MEDIA_QUERIES } from '$styles/constants';
+import { COLORS, ELEVATIONS, FONTS, MEDIA_QUERIES } from '$styles/constants';
 import { css } from '@emotion/css';
 
 export const BackgroundImg = css`
@@ -11,38 +11,42 @@ export const BackgroundImg = css`
 	background-size: cover;
 	background-position: top center;
 	background-repeat: no-repeat;
-	height: 100vh;
-	z-index: -1;
 
-	${MEDIA_QUERIES.tabletLandUp} {
-		height: calc(100vh + 100px);
-	}
+	z-index: -1;
 `;
 
 export const Container = css`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 0 126px;
 	height: 100vh;
+	justify-content: center;
 
 	${MEDIA_QUERIES.desktopUp} {
+		${'' /* height: 100vh; */}
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		padding: -0 102px;
+		padding-bottom: 80px;
 	}
 `;
 
 export const Svg = css`
+	display: none;
 	img {
 		width: 100%;
 	}
 
 	${MEDIA_QUERIES.tabletUp} {
-		width: 50%;
+		display: block;
+		width: 70%;
 	}
+	${MEDIA_QUERIES.tabletLandUp} {
+		display: none;
+	}
+
 	${MEDIA_QUERIES.desktopUp} {
 		width: 100%;
+		display: block;
 		align-self: end;
 	}
 `;
@@ -57,23 +61,25 @@ export const Content = css`
 	padding: 32px 0;
 	width: 75%;
 	h1 {
-		font-size: 2.4rem;
+		font-size: 3.6rem;
 		color: #ffffff;
 	}
 
 	h2 {
+		font-size: 2rem;
 		color: ${COLORS.text};
 		font-weight: 400;
+		font-family: ${FONTS.body};
 	}
 
 	${MEDIA_QUERIES.tabletUp} {
 		width: 55%;
 		gap: 32px;
 		h1 {
-			font-size: 3.2rem;
+			font-size: 5rem;
 		}
 		h2 {
-			font-size: 2.4rem;
+			font-size: 2.5rem;
 		}
 	}
 
@@ -99,7 +105,8 @@ export const CTA = css`
 	font-size: 1.6rem;
 	padding: 12px 16px;
 	border-radius: 4px;
-	width: 100%;
+	width: 90%;
+	max-width: 100%;
 	color: #ffffff;
 	box-shadow: ${ELEVATIONS.smDark};
 	transition: 0.3s;
@@ -107,6 +114,10 @@ export const CTA = css`
 	&:hover {
 		box-shadow: ${ELEVATIONS.mdDark};
 		transform: scale(1.05);
+	}
+
+	${MEDIA_QUERIES.tabletUp} {
+		font-size: 1.8rem;
 	}
 	${MEDIA_QUERIES.desktopUp} {
 		width: auto;

@@ -10,6 +10,3 @@
 
 <Hero />
 <Services />
-
-<style>
-</style>

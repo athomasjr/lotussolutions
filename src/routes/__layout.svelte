@@ -10,10 +10,14 @@
 		display: flex;
 		flex-direction: column;
 
+		main {
+			padding: 16px;
+		}
 		${MEDIA_QUERIES.desktopUp} {
 			main {
+				padding: 0 126px;
 				flex: 1 0 auto;
-				min-height: calc(100vh - 200px);
+				min-height: calc(100vh - 243.875px);
 			}
 		}
 	`;
