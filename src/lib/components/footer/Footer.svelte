@@ -5,7 +5,6 @@
 </script>
 
 <svelte:window bind:innerWidth={screenWidth} />
-<p>{screenWidth}</p>
 
 {#if screenWidth > 1023}
 	<MainFooter />

@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { COLORS, FONTS } from '../../../styles/constants';
 
-const { body, title } = FONTS;
+const { body } = FONTS;
 const { primary } = COLORS;
 // Main Grid
 export const Container = css`

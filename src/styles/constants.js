@@ -41,7 +41,8 @@ export const COLORS = {
 		dark: '#2f2e38'
 	},
 	text: '#b8c3cc',
-	primary: ' #ff715b'
+	primary: ' #ff715b',
+	primaryLight: ' #ff715b90'
 };
 
 const BREAKPOINTS = {

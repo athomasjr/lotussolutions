@@ -1,6 +1,7 @@
 <script context="module">
 	export const prerender = true;
 	import Hero from '$components/hero/Hero.svelte';
+	import Process from '$components/process/Process.svelte';
 	import Services from '$components/services/Services.svelte';
 </script>
 
@@ -10,3 +11,4 @@
 
 <Hero />
 <Services />
+<Process />

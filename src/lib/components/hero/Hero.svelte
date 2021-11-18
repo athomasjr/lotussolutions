@@ -1,5 +1,6 @@
 <script>
 	import svg from '$assets/hero-svg.svg';
+	import { Container } from '$styles/utils/container';
 	import * as S from './heroStyles';
 	let bgImgH;
 </script>

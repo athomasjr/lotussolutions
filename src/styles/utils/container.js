@@ -2,9 +2,9 @@ import { css } from '@emotion/css';
 import { MEDIA_QUERIES } from '../constants';
 
 export const Container = css`
-	padding: 16px;
+	padding: 40px 16px 64px;
 
 	${MEDIA_QUERIES.desktopUp} {
-		padding: 0 126px;
+		padding: 146px 146px 80px;
 	}
 `;

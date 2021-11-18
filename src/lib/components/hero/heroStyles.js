@@ -21,9 +21,11 @@ export const Container = css`
 	align-items: center;
 	height: 100vh;
 	justify-content: center;
+	padding: 16px;
 
 	${MEDIA_QUERIES.desktopUp} {
 		${'' /* height: 100vh; */}
+		padding: 0 126px;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		padding-bottom: 80px;
