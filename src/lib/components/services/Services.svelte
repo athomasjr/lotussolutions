@@ -2,7 +2,8 @@
 	import webSvg from '$assets/logo.svg';
 	import slider from '$assets/sliderBtn.svg';
 	import sliderGrey from '$assets/sliderBtnGrey.svg';
-	import { Title } from '$styles/utils/title';
+	import { Container } from '$styles/utils/container';
+	import SectionHeader from '../common/SectionHeader.svelte';
 	import Card from './Card.svelte';
 	import * as S from './styles';
 
@@ -32,14 +33,19 @@
 </script>
 
 <section id="#services">
-	<div class={S.Container}>
-		<div class={S.Header}>
+	<div class={Container}>
+		<SectionHeader
+			titleMain="Explore Our"
+			titleAccent="Services"
+			subText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Accumsan sit iaculis nunc eget diam erat sit nisl in."
+		/>
+		<!-- <div class={S.Header}>
 			<span class={Title}>Explore Our <span>Services</span></span>
 			<div class={S.Description}>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Accumsan sit iaculis nunc eget diam
 				erat sit nisl in.
 			</div>
-		</div>
+		</div> -->
 		<div class={S.Explore}>
 			<a href="/" class={S.Btn}>Explore More</a>
 		</div>

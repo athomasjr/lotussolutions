@@ -13,7 +13,7 @@
 		${MEDIA_QUERIES.desktopUp} {
 			main {
 				flex: 1 0 auto;
-				min-height: calc(100vh - 200px);
+				min-height: calc(100vh - 243.875px);
 			}
 		}
 	`;
