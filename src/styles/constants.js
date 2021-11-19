@@ -1,6 +1,6 @@
 export const FONTS = {
 	body: 'Glegoo',
-	title: 'Exo 2'
+	heading: `Exo 2`
 };
 
 export const ELEVATIONS = {
@@ -22,7 +22,7 @@ export const ELEVATIONS = {
 
 	smLight: `0.5px 1px 1px hsl(30deg 14% 50%  / 0.7)`,
 	mdLight: `
-	 1px 2px 2px hsl(30deg 14% 50% / 0.333),
+	  1px 2px 2px hsl(30deg 14% 50% / 0.333),
     2px 4px 4px hsl(30deg 14% 50% / 0.333),
     3px 6px 6px hsl(30deg 14% 50% / 0.333)
 	`,
@@ -41,7 +41,8 @@ export const COLORS = {
 		dark: '#2f2e38'
 	},
 	text: '#b8c3cc',
-	primary: ' #ff715b'
+	primary: ' #ff715b',
+	primaryLight: ' #ff715b90'
 };
 
 const BREAKPOINTS = {

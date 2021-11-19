@@ -1,13 +1,13 @@
 <script>
-	import * as S from './styles';
+	import MainFooter from './main/MainFooter.svelte';
+	import MobileFooter from './mobile/MobileFooter.svelte';
+	let screenWidth;
 </script>
 
-<footer>
-	<h1 class={S.Title}>footer</h1>
-</footer>
+<svelte:window bind:innerWidth={screenWidth} />
 
-<style>
-	footer {
-		height: 100px;
-	}
-</style>
+{#if screenWidth > 1023}
+	<MainFooter />
+{:else}
+	<MobileFooter />
+{/if}
