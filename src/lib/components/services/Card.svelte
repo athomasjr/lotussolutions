@@ -21,20 +21,6 @@
 		<p class={S.Description}>
 			{description}
 		</p>
-		<div class={S.Points}>
-			<div>
-				<img src={bullet} alt="bullet" class="service__point" />
-				<span>bulletPoint 1</span>
-			</div>
-			<div class="service__bullet-point">
-				<img src={bullet} alt="bullet" class="service__point" />
-				<span>bulletPoint 2</span>
-			</div>
-			<div class="service__bullet-point">
-				<img src={bullet} alt="bullet" class="service__point" />
-				<span>bulletPoint 3</span>
-			</div>
-		</div>
 	</div>
 </div>
 

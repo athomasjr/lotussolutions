@@ -1,6 +1,9 @@
-@import '@fontsource/exo-2';
-@import '@fontsource/glegoo';
-@import 'normalize.css';
+import { injectGlobal } from '@emotion/css';
+import '@fontsource/exo-2';
+import '@fontsource/glegoo';
+import 'normalize.css';
+
+injectGlobal`
 
 body {
 	background: linear-gradient(90deg, #ece9e6 -1.11%, #ffffff 100%);
@@ -47,3 +50,5 @@ a {
 	color: inherit;
 	font-family: 'Glegoo';
 }
+
+`;

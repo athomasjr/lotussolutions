@@ -1,4 +1,5 @@
 /** @type {import('@sveltejs/kit').Config} */
+import adapter from '@sveltejs/adapter-vercel';
 import image from '@rollup/plugin-image';
 // import adapter from '@sveltejs/adapter-static';
 import path from 'path';
@@ -6,6 +7,7 @@ import path from 'path';
 const config = {
 	kit: {
 		target: '#svelte',
+		adapter: adapter(),
 		// adapter: adapter(),
 		vite: {
 			resolve: {
