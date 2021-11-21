@@ -1,16 +1,26 @@
 import { css } from '@emotion/css';
-import { COLORS, FONTS, MEDIA_QUERIES } from '../../../styles/constants';
+import { FONTS, MEDIA_QUERIES } from '../../../styles/constants';
 
 const { body } = FONTS;
-const { primary } = COLORS;
 // Main Grid
-export const Container = css`
+// export const Container = css`
+// 	display: flex;
+// 	flex-direction: column;
+// 	${MEDIA_QUERIES.tabletLandUp} {
+// 		display: grid;
+// 		grid-template-columns: 1fr 1fr;
+// 		padding: -0 102px;
+// 	}
+// `;
+
+export const HeaderContainer = css`
 	display: flex;
 	flex-direction: column;
-	${MEDIA_QUERIES.tabletLandUp} {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		padding: -0 102px;
+	margin-bottom: 40px;
+
+	${MEDIA_QUERIES.tabletUp} {
+		flex-direction: row;
+		margin-bottom: 48px;
 	}
 `;
 
@@ -51,29 +61,24 @@ export const Explore = css`
 	}
 `;
 
-export const Btn = css`
-	padding: 8px 12px;
-	background-color: transparent;
-	border: 1px solid ${primary};
-	text-decoration: none;
-
-	filter: $sm-dark;
-	border-radius: 4px;
-	order: 1;
-	margin: 0px 44px;
-	font-size: 16px;
-	line-height: 28px;
-	color: #2f2e38;
-`;
-
 // Cards
 export const Services = css`
-	grid-column: 1/3;
-	grid-row: 2;
-	place-self: center;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	flex-direction: column;
+	gap: 40px;
+	align-items: center;
+
+	${MEDIA_QUERIES.tabletUp} {
+		justify-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	${'' /* grid-column: 1/3; */}
+	${'' /* grid-row: 2; */}
+	${'' /* place-self: center; */}
+	${'' /* display: flex; */}
+	${'' /* flex-wrap: wrap; */}
+	${'' /* justify-content: center; */}
 `;
 
 // Slider

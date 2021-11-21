@@ -5,6 +5,7 @@
 
 	export const Header = css`
 		position: relative;
+		margin-bottom: 40px;
 		h2 {
 			position: relative;
 		}
@@ -12,6 +13,10 @@
 		p {
 			font-size: 1.8rem;
 			margin-bottom: 32px;
+		}
+
+		${MEDIA_QUERIES.tabletUp} {
+			margin-bottom: 80px;
 		}
 
 		${MEDIA_QUERIES.desktopUp} {

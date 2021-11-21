@@ -1,9 +1,9 @@
 <script context="module">
 	export const prerender = true;
+	import Contact from '$components/contact/Contact.svelte';
 	import Hero from '$components/hero/Hero.svelte';
 	import Process from '$components/process/Process.svelte';
 	import Services from '$components/services/Services.svelte';
-	import Contact from '$components/contact/Contact.svelte';
 </script>
 
 <svelte:head>
@@ -14,6 +14,3 @@
 <Services />
 <Process />
 <Contact />
-
-<style>
-</style>

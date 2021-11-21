@@ -1,12 +1,13 @@
 import { css } from '@emotion/css';
-import { COLORS, ELEVATIONS, FONTS } from '../../../styles/constants';
+import { COLORS, ELEVATIONS, FONTS, MEDIA_QUERIES } from '../../../styles/constants';
 
 const { body, title } = FONTS;
-const { dark } = COLORS;
+const { dark, background } = COLORS;
 const { mdLight } = ELEVATIONS;
 
 export const Wrapper = css`
 	display: flex;
+	gap: 16px;
 	flex-direction: column;
 	align-items: flex-start;
 	padding: 16px 24px;
@@ -15,17 +16,21 @@ export const Wrapper = css`
 	background: ${dark};
 	border-radius: 4px;
 	box-shadow: ${mdLight};
-
 	order: 1;
 	flex-grow: 0;
+	${'' /* margin: 3rem 56px; */}
+	color: #ffffff;
+	border-radius: 4px;
+	background: ${background.dark};
 
-	margin: 3rem 56px;
+	${MEDIA_QUERIES.tabletUp} {
+		width: 30%;
+	}
 `;
 
 export const Head = css`
 	display: flex;
 	flex-direction: column;
-	order: 1;
 	flex: none;
 	flex-grow: 0;
 	margin: 15px 0px 0px 0px;
@@ -52,16 +57,24 @@ export const Description = css`
 	line-height: 21px;
 	margin: 5px 0px;
 	font-family: ${body};
-	order: 2;
 `;
 
-// export const Points = css`
-// 	font-family: $body;
-// 	margin: 24px 0px;
-// 	order: 3;
-// 	font-size: 18px;
-// 	line-height: 21px;
-// 	& div {
-// 		margin: 12px 0;
-// 	}
-// `;
+export const Btn = css`
+	background: ${COLORS.primary};
+	border: none;
+	color: #ffffff;
+	font-size: 1.6rem;
+	padding: 8px 16px;
+	border-radius: 4px;
+	text-align: center;
+	cursor: pointer;
+	box-shadow: 0.5px 1px 1px hsl(246deg 9% 5% / 0.7);
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		box-shadow: 1px 2px 2px hsl(246deg 9% 5% / 0.333), 2px 4px 4px hsl(246deg 9% 5% / 0.333),
+			3px 6px 6px hsl(246deg 9% 5% / 0.333);
+
+		transform: scale(1.05);
+	}
+`;
