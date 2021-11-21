@@ -16,25 +16,6 @@ export const Container = css`
 	box-shadow: 0px 4px 4px rgba(47, 46, 56, 0.25);
 `;
 
-// Header area
-export const Header = css`
-	grid-column: 1/3;
-	grid-row: 1;
-	justify-self: flex-start;
-	align-self: center;
-	${MEDIA_QUERIES.desktopUp} {
-		padding: 16px;
-	}
-	${MEDIA_QUERIES.tabletLandUp} {
-		padding: 8px;
-	}
-`;
-
-export const Border = css`
-	border: 2px solid #2f2e38;
-	padding: 5px;
-`;
-
 export const Person1 = css`
 	grid-column: 1/3;
 	grid-row: 3;

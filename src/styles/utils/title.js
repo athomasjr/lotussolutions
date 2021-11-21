@@ -12,6 +12,11 @@ export const Title = css`
 	& span {
 		color: ${primary};
 	}
+	& span:nth-child(2) {
+		border: 2px solid #2f2e38;
+		padding: 5px;
+	}
+
 	${MEDIA_QUERIES.tabletUp} {
 		font-size: 3.6rem;
 	}

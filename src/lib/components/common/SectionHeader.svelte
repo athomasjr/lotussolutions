@@ -15,7 +15,7 @@
 		}
 
 		${MEDIA_QUERIES.desktopUp} {
-			width: 448px;
+			/* width: 448px; */
 			&:before {
 				content: '';
 				position: absolute;
@@ -23,7 +23,8 @@
 				height: 2px;
 				width: 138px;
 				left: -146px;
-				top: 36px;
+				top: 50%;
+				transform: translateY(-50%);
 				transition: 0.3s;
 			}
 
@@ -37,14 +38,41 @@
 		}
 	`;
 
+	export const Desc = css`
+		position: relative;
+		margin-top: -2rem;
+
+		p {
+			font-size: 1.8rem;
+			margin-bottom: 32px;
+		}
+
+		${MEDIA_QUERIES.desktopUp} {
+			width: 448px;
+
+			p {
+				font-size: 1.8rem;
+				margin-bottom: 10px;
+			}
+		}
+	`;
+
 	export let titleMain;
 	export let titleAccent;
 	export let subText;
 	export let whiteText = false;
+	export let extraText;
+	export let bordered;
 </script>
 
 <div class:white-text={whiteText} class={Header}>
-	<h2 class={Title}>{titleMain} <span>{titleAccent}</span></h2>
+	<h2 class={Title}>
+		{titleMain} <span>{titleAccent} </span>
+		{extraText !== undefined ? extraText : ''}
+		{#if bordered !== undefined} <span> {bordered}</span> {/if}
+	</h2>
+</div>
+<div class={Desc}>
 	{#if subText}
 		<p>
 			{subText}
