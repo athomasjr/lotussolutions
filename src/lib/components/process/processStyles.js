@@ -124,25 +124,6 @@ export const ProcessCardThree = css`
 	}
 `;
 
-// export const ProcessCardFour = css`
-// 	position: relative;
-
-// 	${MEDIA_QUERIES.desktopUp} {
-// 		${
-// 			'' /* left: 369px;
-// 		top: 196px; */
-// 		}
-// 		&:before {
-// 			content: '\\0030\\0034';
-// 			position: absolute;
-// 			color: ${COLORS.primary};
-// 			font-size: 9.4rem;
-// 			left: -98px;
-// 			top: -42px;
-// 		}
-// 	}
-// `;
-
 export const CardsContainer = css`
 	display: flex;
 	flex-direction: column;

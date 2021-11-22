@@ -1,6 +1,6 @@
 <script>
-	import * as S from './styles';
 	import { Title } from '$styles/utils/title';
+	import * as S from './styles';
 	let errors = {};
 	let showMessage = false;
 	let responseMessage = {};
@@ -69,7 +69,7 @@
 	}
 </script>
 
-<div class={S.Container}>
+<div id="contact" class={S.Container}>
 	<div class={S.Header}>
 		<span class={Title}>Get <span>In Touch</span> With <span class={S.Border}>Us</span></span>
 	</div>
