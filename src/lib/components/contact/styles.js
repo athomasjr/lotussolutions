@@ -1,5 +1,5 @@
+import { COLORS, ELEVATIONS, FONTS, MEDIA_QUERIES } from '$styles/constants';
 import { css } from '@emotion/css';
-import { COLORS, FONTS, MEDIA_QUERIES } from '$styles/constants';
 
 const { body } = FONTS;
 const { background, primary } = COLORS;
@@ -43,23 +43,36 @@ export const Fields = css`
 	align-items: center;
 	width: 100%;
 
-	& input {
+	input,
+	textarea {
+		border: none;
 		padding: 1rem;
-		font-size: 18px;
-		height: 40px;
+		font-size: 1.8rem;
 		width: 100%;
-		margin-bottom: 1rem;
-
 		background-color: ${background.dark};
 		color: #fff;
+		box-shadow: ${ELEVATIONS.smLight};
+		border-radius: 4px;
+		transition: all 0.3s ease-in-out;
+
+		&::placeholder {
+			color: #ffffff80;
+			font-family: 'Glegoo';
+		}
+
+		&:focus {
+			box-shadow: ${ELEVATIONS.mdLight};
+			transform: scale(1.02);
+		}
+	}
+
+	& input {
+		height: 40px;
+		margin-bottom: 1rem;
 	}
 	& textarea {
-		padding: 1rem;
-		font-size: 18px;
-		width: 100%;
 		min-height: 200px;
-		background-color: ${background.dark};
-		color: #fff;
+		resize: none;
 	}
 `;
 
@@ -86,20 +99,28 @@ export const Name = css`
 `;
 
 export const Btn = css`
-	padding: 8px 16px;
+	padding: 8px 32px;
 	background-color: transparent;
 	border: 1px solid ${primary};
 	text-decoration: none;
-
-	filter: $sm-dark;
+	box-shadow: ${ELEVATIONS.smLight};
 	border-radius: 4px;
 	order: 1;
 	margin: 3rem 0;
-	font-size: 16px;
+	font-size: 1.8rem;
 	line-height: 28px;
 	color: #2f2e38;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	font-family: 'Glegoo';
+
 	&:disabled {
 		border: 1px solid #000;
+	}
+
+	&:hover {
+		box-shadow: ${ELEVATIONS.mdLight};
+		transform: scale(1.05);
 	}
 `;
 

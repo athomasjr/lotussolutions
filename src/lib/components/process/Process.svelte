@@ -23,12 +23,6 @@
 			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nunc feugiat orci diam feugiat cras. Neque ipsum pharetra risus ',
 			points: ['This is point 1', 'This is point 2', 'This is point 3']
 		}
-		// {
-		// 	styles: S.ProcessCardFour,
-		// 	heading: 'Find Your Solution',
-		// 	text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nunc feugiat orci diam feugiat cras. Neque ipsum pharetra risus ',
-		// 	points: ['This is point 1', 'This is point 2', 'This is point 3']
-		// }
 	];
 </script>
 
@@ -59,7 +53,7 @@
 		background-image: url('../../../assets/processbg.jpeg');
 		background-size: cover;
 		background-position: top;
-		height: 100vh;
+		min-height: 100vh;
 		display: flex;
 		flex-direction: column;
 	}
