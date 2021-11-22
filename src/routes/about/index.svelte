@@ -1,6 +1,7 @@
 <script context="module">
 	import * as S from './styles';
 	import { Title } from '$styles/utils/title';
+	import SectionHeader from '$components/common/SectionHeader.svelte';
 	import eric from '$assets/eric.png';
 	import antony from '$assets/antony.png';
 	export const prerender = true;
@@ -12,9 +13,7 @@
 
 <section>
 	<div class={S.Container}>
-		<div class={S.Header}>
-			<span class={Title}>Get To <span>Know <span class={S.Border}>Us</span></span></span>
-		</div>
+		<SectionHeader blackText titleMain="Get To" titleAccent="Know" bordered="Us" />
 		<div class={S.Story}>
 			<p />
 			t is a long established fact that a reader will be distracted by the readable content of a page

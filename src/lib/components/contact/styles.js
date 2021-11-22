@@ -14,24 +14,6 @@ export const Container = css`
 	}
 `;
 
-// Header area
-export const Header = css`
-	padding: 102px 0;
-	grid-column: 1/3;
-	grid-row: 1;
-	justify-self: flex-start;
-	align-self: center;
-	${MEDIA_QUERIES.phoneOnly} {
-		text-align: center;
-	} ;
-`;
-
-// title border
-export const Border = css`
-	border: 2px solid #2f2e38;
-	padding: 5px;
-`;
-
 export const Form = css`
 	text-align: center;
 	min-width: 100%;
