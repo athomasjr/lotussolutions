@@ -5,14 +5,9 @@
 
 	export const Header = css`
 		position: relative;
-		margin-bottom: 40px;
+
 		h2 {
 			position: relative;
-		}
-
-		p {
-			font-size: 1.8rem;
-			margin-bottom: 32px;
 		}
 
 		${MEDIA_QUERIES.tabletUp} {
@@ -32,19 +27,13 @@
 				transform: translateY(-50%);
 				transition: 0.3s;
 			}
-
-			p {
-				font-size: 1.8rem;
-				margin-bottom: 10px;
-			}
-
-			a {
-			}
 		}
 	`;
 
 	export const Desc = css`
 		position: relative;
+
+		margin-bottom: 4rem;
 		margin-top: -2rem;
 
 		p {
@@ -52,8 +41,9 @@
 			margin-bottom: 32px;
 		}
 
-		${MEDIA_QUERIES.desktopUp} {
+		${MEDIA_QUERIES.tabletUp} {
 			width: 448px;
+			margin-top: -6rem;
 
 			p {
 				font-size: 1.8rem;
