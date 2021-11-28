@@ -10,9 +10,11 @@ export const Wrapper = css`
 	gap: 16px;
 	flex-direction: column;
 	align-items: flex-start;
+	justify-content: space-between;
 	padding: 16px 24px;
 	color: white;
-	max-width: 295px;
+	max-width: 100%;
+	min-height: 350px;
 	background: ${dark};
 	border-radius: 4px;
 	box-shadow: ${mdLight};
@@ -24,7 +26,11 @@ export const Wrapper = css`
 	background: ${background.dark};
 
 	${MEDIA_QUERIES.tabletUp} {
-		width: 30%;
+		max-width: 250px;
+		min-height: 420px;
+	}
+	${MEDIA_QUERIES.bigDesktopUp} {
+		max-width: 295px;
 	}
 `;
 
@@ -53,8 +59,7 @@ export const Description = css`
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	font-size: 18px;
-	line-height: 21px;
+	font-size: 1.8rem;
 	margin: 5px 0px;
 	font-family: ${body};
 `;

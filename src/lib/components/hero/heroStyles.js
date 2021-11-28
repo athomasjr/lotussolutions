@@ -1,5 +1,5 @@
-import heroImage from '$assets/hero-bg.jpeg';
-import { COLORS, ELEVATIONS, FONTS, MEDIA_QUERIES } from '$styles/constants';
+import heroImage from '$assets/herocustomer.png';
+import { COLORS, MEDIA_QUERIES } from '$styles/constants';
 import { css } from '@emotion/css';
 
 export const BackgroundImg = css`
@@ -9,22 +9,19 @@ export const BackgroundImg = css`
 	right: 0;
 	background: url(${heroImage});
 	background-size: cover;
-	background-position: top center;
+	background-position: center;
 	background-repeat: no-repeat;
-
 	z-index: -1;
 `;
 
 export const Container = css`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	height: 100vh;
-	justify-content: center;
 	padding: 16px;
+	justify-items: center;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
 
 	${MEDIA_QUERIES.desktopUp} {
-		${'' /* height: 100vh; */}
 		padding: 0 126px;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -32,71 +29,36 @@ export const Container = css`
 	}
 `;
 
-export const Svg = css`
-	display: none;
-	img {
-		width: 100%;
-	}
-
-	${MEDIA_QUERIES.tabletUp} {
-		display: block;
-		width: 70%;
-	}
-	${MEDIA_QUERIES.tabletLandUp} {
-		display: none;
-	}
-
-	${MEDIA_QUERIES.desktopUp} {
-		width: 100%;
-		display: block;
-		align-self: end;
-	}
-`;
-
 export const Content = css`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 16px;
-	text-align: center;
-	margin-bottom: 32px;
-	padding: 32px 0;
-	width: 75%;
+	margin-top: 56px;
+	width: 85%;
 	h1 {
-		font-size: 3.6rem;
+		font-size: 2rem;
 		color: #ffffff;
 	}
 
-	h2 {
-		font-size: 2rem;
-		color: ${COLORS.text};
-		font-weight: 400;
-		font-family: ${FONTS.body};
-	}
-
 	${MEDIA_QUERIES.tabletUp} {
-		width: 55%;
+		width: 75%;
 		gap: 32px;
 		h1 {
-			font-size: 5rem;
-		}
-		h2 {
-			font-size: 2.5rem;
+			font-size: 3.2rem;
 		}
 	}
 
 	${MEDIA_QUERIES.tabletLandUp} {
-		width: 40%;
+		width: 50%;
 	}
 	${MEDIA_QUERIES.desktopUp} {
 		width: 100%;
 		text-align: left;
-		margin: -245px 0 0 0;
 		h1 {
-			font-size: 7rem;
+			font-size: 4rem;
 		}
-		h2 {
-			font-size: 3.2rem;
+	}
+
+	${MEDIA_QUERIES.bigDesktopUp} {
+		h1 {
+			font-size: 5.6rem;
 		}
 	}
 `;
@@ -107,15 +69,18 @@ export const CTA = css`
 	font-size: 1.6rem;
 	padding: 12px 16px;
 	border-radius: 4px;
-	width: 90%;
-	max-width: 100%;
+	width: 80%;
+	max-width: 80%;
 	color: #ffffff;
-	box-shadow: ${ELEVATIONS.smDark};
+	box-shadow: 0.5px 1px 1px hsl(0 2% 40% / 0.7);
 	transition: 0.3s;
+	text-align: center;
 
 	&:hover {
-		box-shadow: ${ELEVATIONS.mdDark};
+		box-shadow: 1px 2px 2px hsl(0 2% 40% / 0.333), 2px 4px 4px hsl(0 2% 40% / 0.333),
+			3px 6px 6px hsl(0 2% 40% / 0.333);
 		transform: scale(1.05);
+		${'' /* 0,2%,51% */}
 	}
 
 	${MEDIA_QUERIES.tabletUp} {

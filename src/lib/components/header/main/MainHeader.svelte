@@ -24,7 +24,7 @@
 			{/each}
 		</ul>
 	</nav>
-	<a class={S.CTA} href="/#contact">Hire Us</a>
+	<a class={S.CTA} href="/#contact">Get Started</a>
 </header>
 
 <style>

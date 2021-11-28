@@ -69,16 +69,10 @@ export const Services = css`
 	align-items: center;
 
 	${MEDIA_QUERIES.tabletUp} {
-		justify-content: center;
+		justify-content: space-between;
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
-	${'' /* grid-column: 1/3; */}
-	${'' /* grid-row: 2; */}
-	${'' /* place-self: center; */}
-	${'' /* display: flex; */}
-	${'' /* flex-wrap: wrap; */}
-	${'' /* justify-content: center; */}
 `;
 
 // Slider
