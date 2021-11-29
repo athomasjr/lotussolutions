@@ -1,9 +1,8 @@
 <script context="module">
-	import * as S from './styles';
-	import { Title } from '$styles/utils/title';
-	import SectionHeader from '$components/common/SectionHeader.svelte';
-	import eric from '$assets/eric.png';
 	import antony from '$assets/antony.png';
+	import eric from '$assets/eric.png';
+	import SectionHeader from '$components/common/SectionHeader.svelte';
+	import * as S from './styles';
 	export const prerender = true;
 </script>
 
@@ -14,16 +13,7 @@
 <section>
 	<div class={S.Container}>
 		<SectionHeader blackText titleMain="Get To" titleAccent="Know" bordered="Us" />
-		<div class={S.Story}>
-			<p />
-			t is a long established fact that a reader will be distracted by the readable content of a page
-			when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-			distribution of letters, as opposed to using 'Content here, content here', making it look like
-			readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
-			their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
-			infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
-			(injected humour and the like).
-		</div>
+
 		<div class={S.Person1}>
 			<div class={S.Founder}><img src={eric} alt="eric" class={S.Face} /></div>
 
@@ -31,10 +21,12 @@
 				<div class={S.Name}>Eric Boisvenu</div>
 				<div class={S.Title}>Co-Founder</div>
 				<p class={S.Description}>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-					been the industry's standard dummy text ever since th
+					I'm a Self Taught FullStack developer coming from the construction industry. I am
+					self-motivated, cooperative, well-organized, and a dedicated team player, one of the core
+					principles of Lotus Solutions. Solving challenging problems fuels me. I enjoy Camping,
+					ATVing, Hiking, and finding new places to eat great food in my free time.
 				</p>
-				<button class={S.Button}>Eric's Bio</button>
+				<!-- <button class={S.Button}>Eric's Bio</button> -->
 			</div>
 		</div>
 		<div class={S.Person2}>
@@ -43,10 +35,11 @@
 				<div class={S.Name}>Antonio Thomas</div>
 				<div class={S.Title}>Co-Founder</div>
 				<p class={S.Description}>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-					been the industry's standard dummy text ever since th
+					Hi, I'm Antonio, a self-taught web developer, and writer from Wisconsin. I'm also a
+					father, husband, fitness competitor, "amateur" amateur bass fisherman. I love working with
+					the latest technologies such as React, Svelte, CSS, and CSS-in-Js.
 				</p>
-				<button class={S.Button}>Antonio's Bio</button>
+				<!-- <button class={S.Button}>Antonio's Bio</button> -->
 			</div>
 		</div>
 	</div>

@@ -22,12 +22,12 @@ export const Form = css`
 	padding: 3rem;
 	margin: 1rem;
 	${MEDIA_QUERIES.tabletUp} {
-		min-width: 70%;
+		min-width: 100%;
 	}
 	${MEDIA_QUERIES.tabletLandUp} {
 		min-width: 800px;
-		grid-column: 1/3;
-		grid-row: 2;
+		${'' /* grid-column: 1/3; */}
+		${'' /* grid-row: 2; */}
 		justify-self: center;
 		align-self: center;
 	}
@@ -40,7 +40,6 @@ export const Fields = css`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
 	width: 100%;
 
 	input,
@@ -48,7 +47,7 @@ export const Fields = css`
 		border: none;
 		padding: 1rem;
 		font-size: 1.8rem;
-		width: 100%;
+		max-width: 100%;
 		background-color: ${background.dark};
 		color: #fff;
 		box-shadow: ${ELEVATIONS.smLight};
@@ -79,7 +78,7 @@ export const Fields = css`
 export const Name = css`
 	display: flex;
 
-	width: 103%;
+	width: 100%;
 	& input {
 		&:first-of-type {
 			margin-right: 5%;
@@ -88,7 +87,7 @@ export const Name = css`
 			}
 		}
 		padding: 1rem;
-		font-size: 18px;
+		font-size: 1.8rem;
 		height: 40px;
 		width: 100%;
 		margin-bottom: 1rem;
@@ -133,7 +132,7 @@ export const Message = css`
 	padding: 2rem;
 	background-color: rgba(0, 177, 106, 0.5);
 	margin: 0 auto 1rem;
-	font-size: 18px;
+	font-size: 1.8rem;
 	font-family: ${body};
 `;
 
@@ -142,6 +141,6 @@ export const MessageError = css`
 	background-color: ${primary};
 	margin: 0 auto 1rem;
 	color: #fff;
-	font-size: 18px;
+	font-size: 1.8rem;
 	font-family: ${body};
 `;
