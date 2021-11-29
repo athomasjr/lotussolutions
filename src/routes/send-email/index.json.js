@@ -10,10 +10,10 @@ export async function post(req) {
 	try {
 		sgMail.setApiKey(process.env['VITE_SENDGRID_API_KEY']);
 		const msg = {
-			to: 'burn4live@gmail.com', // Change to our email
-			from: 'ericb@linux.com',
+			to: 'info@lotussolutions.io', // Change to our email
+			from: 'contact@lotussolutions.io',
 			subject: subject,
-			text: message,
+			text: `Contact Form | From: ${name}, Email: ${email}, Message: ${message}`,
 			html: htmlLayout
 		};
 		sgMail.send(msg);
