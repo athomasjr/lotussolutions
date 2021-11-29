@@ -7,24 +7,23 @@
 
 	const services = [
 		{
-			name: 'Custom Design',
+			name: 'Web | Mobile',
 			icon: webSvg,
-			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nunc feugiat orci diam feugiat cras. Neque ipsum pharetra risus risus.',
+			description: `Customer-driven development builds a lasting connection between your business and your customers. We use design patterns proven to help your customers stick around.`,
 			background: true
 		},
 		{
-			name: 'Custom App',
+			name: 'Cross-Platform',
 			icon: webSvg,
 			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nunc feugiat orci diam feugiat cras. Neque ipsum pharetra risus risus.',
+				'Reach your customers faster on the platform of their choice. We develop your application using industry-leading cross-platform technologies; reach your customers wherever they are.',
 			background: false
 		},
 		{
-			name: 'UI/UX Design',
+			name: 'SEO Optimization',
 			icon: webSvg,
 			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nunc feugiat orci diam feugiat cras. Neque ipsum pharetra risus risus.',
+				'Grow your business with organic traffic. Less than 10 percent of people click on paid ads; organic reach builds trust with your customers.',
 			background: true
 		}
 	];
@@ -33,9 +32,9 @@
 <section id="services">
 	<div class={Container}>
 		<SectionHeader
-			titleMain="Explore Our"
-			titleAccent="Services"
-			subText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Accumsan sit iaculis nunc eget diam erat sit nisl in."
+			titleMain="Deliver Lasting"
+			titleAccent="Experiences"
+			subText="We develop your applications to deliver the customer experience you envision; your customers will thank you for it."
 		/>
 
 		<div class={S.Services}>

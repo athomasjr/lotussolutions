@@ -16,25 +16,30 @@
 
 		${MEDIA_QUERIES.desktopUp} {
 			/* width: 448px; */
+
 			&:before {
 				content: '';
 				position: absolute;
 				background-color: ${COLORS.primary};
 				height: 2px;
 				width: 138px;
-				left: -146px;
-				top: 50%;
+				inset: 50% 0 0 -146px;
 				transform: translateY(-50%);
 				transition: 0.3s;
+			}
+		}
+
+		${MEDIA_QUERIES.bigDesktopUp} {
+			&:before {
+				width: 280px;
+				inset: 50% 0 0 -290px;
 			}
 		}
 	`;
 
 	export const Desc = css`
 		position: relative;
-
-		margin-bottom: 4rem;
-		margin-top: -2rem;
+		margin: -2rem 0 5.6rem;
 
 		p {
 			font-size: 1.8rem;
@@ -49,6 +54,10 @@
 				font-size: 1.8rem;
 				margin-bottom: 10px;
 			}
+		}
+
+		${MEDIA_QUERIES.desktopUp} {
+			margin-bottom: 8rem;
 		}
 	`;
 
@@ -69,18 +78,14 @@
 </div>
 <div class={Desc}>
 	{#if subText}
-		<p>
+		<p class:white-text={whiteText}>
 			{subText}
 		</p>
 	{/if}
 </div>
 
 <style>
-	.white-text h2 {
-		color: #ffffff;
-	}
-
-	.white-text p {
+	.white-text {
 		color: #ffffff;
 	}
 </style>

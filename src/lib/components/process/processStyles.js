@@ -64,7 +64,7 @@ export const ProcessCardOne = css`
 		&:before {
 			content: '\\0031';
 			position: absolute;
-			color: #ffffff;
+			color: ${COLORS.primary};
 			font-size: 6rem;
 			left: -38px;
 			top: -42px;
@@ -86,8 +86,7 @@ export const ProcessCardTwo = css`
 		&:before {
 			content: '\\0032';
 			position: absolute;
-			${'' /* color: ${COLORS.primary}; */}
-			color: ${COLORS.background.dark};
+			color: ${COLORS.primary};
 			font-size: 6rem;
 			left: -38px;
 			top: -42px;
@@ -108,7 +107,7 @@ export const ProcessCardThree = css`
 		&:before {
 			content: '\\0033';
 			position: absolute;
-			color: #000000;
+			color: ${COLORS.primary};
 			font-size: 6rem;
 			left: -38px;
 			top: -42px;
@@ -127,21 +126,11 @@ export const ProcessCardThree = css`
 export const CardsContainer = css`
 	display: flex;
 	flex-direction: column;
-	gap: 24px;
-	margin: auto 0;
+	gap: 40px;
 
 	${MEDIA_QUERIES.tabletUp} {
 		flex-direction: row;
-		padding: 40px 60px 0;
 		flex-wrap: wrap;
-		gap: 55px;
-	}
-
-	${MEDIA_QUERIES.desktopUp} {
-		padding: 64px 100px 100px;
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		justify-items: start;
-		grid-gap: 40px;
+		justify-content: space-between;
 	}
 `;

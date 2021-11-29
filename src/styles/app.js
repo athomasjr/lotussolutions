@@ -32,8 +32,10 @@ h5 {
 }
 
 p {
+	font-size: 1.6rem;
 	margin-bottom: 1rem;
 	font-family: 'Glegoo';
+	line-height: 24px;
 }
 
 h1 {

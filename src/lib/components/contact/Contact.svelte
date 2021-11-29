@@ -1,5 +1,5 @@
 <script>
-	import { Title } from '$styles/utils/title';
+	import { Container } from '$styles/utils/container';
 	import SectionHeader from '../common/SectionHeader.svelte';
 	import * as S from './styles';
 
@@ -71,7 +71,7 @@
 	}
 </script>
 
-<div id="contact" class={S.Container}>
+<div id="contact" class={Container}>
 	<SectionHeader blackText titleMain="Get" titleAccent="In Touch" extraText="With" bordered="Us" />
 	<div class={S.Form}>
 		<form on:submit|preventDefault={handleSubmit}>

@@ -1,16 +1,17 @@
+import { COLORS, FONTS, MEDIA_QUERIES } from '$styles/constants';
 import { css } from '@emotion/css';
-import { FONTS, COLORS, ELEVATIONS, MEDIA_QUERIES } from '$styles/constants';
 
 const { body, title } = FONTS;
-const { dark, primary } = COLORS;
-const { mdDark } = ELEVATIONS;
+const { primary } = COLORS;
 
 export const Container = css`
 	display: grid;
+	align-items: start;
+	padding: 0 24px;
 	${MEDIA_QUERIES.tabletLandUp} {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		padding: -0 102px;
+		padding: 102px;
 	}
 	background: linear-gradient(90deg, #ece9e6 -1.11%, #ffffff 100%);
 	box-shadow: 0px 4px 4px rgba(47, 46, 56, 0.25);
@@ -59,6 +60,10 @@ export const Person2 = css`
 	${MEDIA_QUERIES.tabletUp} {
 		justify-content: center;
 		margin: 0;
+	}
+
+	${MEDIA_QUERIES.bigDesktopUp} {
+		margin-top: -40px;
 	}
 `;
 
@@ -112,7 +117,5 @@ export const Story = css`
 	place-self: center;
 	font-size: 16px;
 	font-family: ${body};
-	margin: 1rem;
-
-	margin-bottom: 3rem;
+	margin: -100px 1rem 3rem 1rem;
 `;

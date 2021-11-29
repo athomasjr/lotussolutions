@@ -19,7 +19,7 @@
 		<nav class={MobileNav}>
 			<ul>
 				{#each Links as link}
-					<li>
+					<li on:click={() => (showSideBar = !showSideBar)}>
 						<a href={link.href}>{link.text}</a>
 					</li>
 				{/each}

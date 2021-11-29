@@ -8,29 +8,29 @@
 <div class={styles}>
 	<h3>{heading}</h3>
 	<p>{text}</p>
-	<ul>
+	<!-- <ul>
 		{#each points as point}
 			<li>{point}</li>
 		{/each}
-	</ul>
+	</ul> -->
 </div>
 
 <style>
 	div {
-		padding: 16px;
-		border-radius: 5px;
-		backdrop-filter: blur(16px) saturate(180%);
-		-webkit-backdrop-filter: blur(16px) saturate(180%);
-		background-color: rgba(74, 74, 74, 0.75);
-		border: 1px solid rgba(255, 255, 255, 0.125);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		padding: 16px 24px;
+		border-radius: 4px;
+		max-width: 100%;
+		/* min-height: 300px; */
+		background: linear-gradient(90deg, #ece9e6 -1.11%, #ffffff 100%);
+		box-shadow: 1px 2px 2px hsl(240deg 8% 0%/ 0.333), 2px 4px 4px hsl(240deg 8% 0%/ 0.333),
+			3px 6px 6px hsl(240deg 8% 0%/ 0.333);
 	}
 
 	h3,
 	p,
-	li {
-		color: #ffffff;
-	}
-
 	h3 {
 		font-size: 2.4rem;
 	}
@@ -39,31 +39,12 @@
 		font-size: 1.8rem;
 	}
 
-	ul {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-		display: flex;
-		flex-direction: column;
-		gap: 8px;
-	}
-
-	li {
-		font-size: 1.8rem;
-	}
-
-	ul li:before {
-		content: '\2022';
-		color: #ff715b;
-		width: 1em;
-		display: inline-block;
-		font-weight: bold;
-	}
-
 	/* tabletUp */
 	@media only screen and (min-width: 37.5em) {
 		div {
-			width: 40%;
+			justify-content: space-around;
+			max-width: 250px;
+			/* min-height: 400px; */
 		}
 	}
 
@@ -74,17 +55,11 @@
 	/* desktopUp */
 	@media only screen and (min-width: 75em) {
 		div {
-			width: 90%;
+			max-width: 295px;
 		}
 
 		h3 {
 			font-size: 2.4rem;
-		}
-	}
-
-	@media only screen and (min-width: 96em) {
-		div {
-			width: 80%;
 		}
 	}
 </style>

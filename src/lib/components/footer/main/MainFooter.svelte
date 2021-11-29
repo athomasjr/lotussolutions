@@ -10,7 +10,7 @@
 			<h3>
 				<span>Lotus</span>Solutions
 			</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At</p>
+			<p>Be the Reason Customers Define Experience Differently</p>
 			<Socials />
 		</div>
 

@@ -1,4 +1,4 @@
-import { COLORS, ELEVATIONS } from '$styles/constants';
+import { COLORS } from '$styles/constants';
 import { css } from '@emotion/css';
 
 export const Header = css`
@@ -22,12 +22,12 @@ export const Nav = css`
 
 	li {
 		list-style: none;
-		color: ${COLORS.text};
+		color: #ffffff;
+		font-weight: 600;
 		position: relative;
 		transition: 0.4s;
 
 		&:hover {
-			color: #ffffff;
 			&:after {
 				width: 100%;
 			}
@@ -51,11 +51,13 @@ export const CTA = css`
 	padding: 12px 16px;
 	border-radius: 4px;
 	color: #ffffff;
-	box-shadow: ${ELEVATIONS.smDark};
+	box-shadow: 0.5px 1px 1px hsl(272 6% 20% / 0.7);
 	transition: 0.3s;
+	${'' /* 272,6%,33% */}
 
 	&:hover {
-		box-shadow: ${ELEVATIONS.mdDark};
+		box-shadow: 1px 2px 2px hsl(272 6% 20%/ 0.333), 2px 4px 4px hsl(272 6% 20%/ 0.333),
+			3px 6px 6px hsl(272 6% 20%/ 0.333);
 		transform: scale(1.05);
 	}
 `;
