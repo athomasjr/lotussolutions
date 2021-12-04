@@ -134,13 +134,15 @@ export const Message = css`
 	margin: 0 auto 1rem;
 	font-size: 1.8rem;
 	font-family: ${body};
+	max-width: 600px;
 `;
 
 export const MessageError = css`
-	padding: 2rem;
+	padding: 1rem;
 	background-color: ${primary};
 	margin: 0 auto 1rem;
 	color: #fff;
 	font-size: 1.8rem;
 	font-family: ${body};
+	max-width: 600px;
 `;

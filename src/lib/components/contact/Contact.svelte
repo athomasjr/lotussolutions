@@ -1,6 +1,7 @@
 <script>
 	import { Container } from '$styles/utils/container';
 	import SectionHeader from '../common/SectionHeader.svelte';
+	import Errors from './Errors.svelte';
 	import * as S from './styles';
 
 	let errors = {};
@@ -43,7 +44,7 @@
 		}
 	}
 	function isRequiredFieldValid(value) {
-		return value != null && value !== '';
+		return (value != null && value !== '' && typeof value === 'string') || value instanceof String;
 	}
 
 	async function handleSubmit(e) {
@@ -75,34 +76,18 @@
 	<SectionHeader blackText titleMain="Get" titleAccent="In Touch" extraText="With" bordered="Us" />
 	<div class={S.Form}>
 		<form on:submit|preventDefault={handleSubmit}>
-			{#if showMessage}
-				<div class={responseMessage.type === 'success' ? S.Message : S.MessageError}>
-					{responseMessage.text}
-				</div>
-			{/if}
+			<Errors {errors} {responseMessage} {showMessage} />
 			<div class={S.Fields}>
 				<div class={S.Name}>
-					<input type="text" name="name" placeholder="Name" bind:value={name} />
+					<input required type="text" name="name" placeholder="Name" bind:value={name} />
 
-					<input type="email" name="email" placeholder="Email" bind:value={email} />
+					<input required type="email" name="email" placeholder="Email" bind:value={email} />
 				</div>
-				{#if errors.email && errors.email.required}
-					<p class={S.Error}>Email is required</p>
-				{/if}
-				{#if errors.name && errors.name.required}
-					<p class={S.Error}>Name is required</p>
-				{/if}
-				<input type="text" name="subject" placeholder="Subject" bind:value={subject} />
-				{#if errors.subject && errors.subject.required}
-					<p class={S.Error}>Subject is required</p>
-				{/if}
+				<input required type="text" name="subject" placeholder="Subject" bind:value={subject} />
 				<textarea name="message" placeholder="Message" bind:value={message} />
-				{#if errors.message && errors.message.required}
-					<p class={S.Error}>Message is required</p>
-				{/if}
 			</div>
-			<button disabled={responseMessage.type === 'success'} class={S.Btn} type="submit"
-				>{responseMessage.type === 'success' ? 'Sent !' : 'Submit'}</button
+			<button class={S.Btn} type="submit"
+				>{responseMessage.type === 'success' ? 'Message Sent !' : 'Submit'}</button
 			>
 		</form>
 	</div>
