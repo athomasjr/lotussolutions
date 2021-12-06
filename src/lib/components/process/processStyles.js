@@ -59,8 +59,8 @@ export const ContentContainer = css`
 `;
 
 export const ProcessCardOne = css`
-	position: relative;
-	${MEDIA_QUERIES.tabletUp} {
+	${
+		'' /* ${MEDIA_QUERIES.tabletUp} {
 		&:before {
 			content: '\\0031';
 			position: absolute;
@@ -69,59 +69,12 @@ export const ProcessCardOne = css`
 			left: -38px;
 			top: -42px;
 		}
-	}
-	${MEDIA_QUERIES.desktopUp} {
-		&:before {
-			content: '\\0030\\0031';
-			font-size: 8rem;
-			${'' /* left: -38px; */}
-			top: -42px;
-		}
+	} */
 	}
 `;
 
-export const ProcessCardTwo = css`
-	position: relative;
-	${MEDIA_QUERIES.tabletUp} {
-		&:before {
-			content: '\\0032';
-			position: absolute;
-			color: ${COLORS.primary};
-			font-size: 6rem;
-			left: -38px;
-			top: -42px;
-		}
-	}
-	${MEDIA_QUERIES.desktopUp} {
-		&:before {
-			content: '\\0030\\0032';
-			font-size: 8rem;
-			${'' /* left: -98px; */}
-			top: -42px;
-		}
-	}
-`;
-export const ProcessCardThree = css`
-	position: relative;
-	${MEDIA_QUERIES.tabletUp} {
-		&:before {
-			content: '\\0033';
-			position: absolute;
-			color: ${COLORS.primary};
-			font-size: 6rem;
-			left: -38px;
-			top: -42px;
-		}
-	}
-	${MEDIA_QUERIES.desktopUp} {
-		&:before {
-			content: '\\0030\\0033';
-			font-size: 8rem;
-			${'' /* left: -98px; */}
-			top: -42px;
-		}
-	}
-`;
+export const ProcessCardTwo = css``;
+export const ProcessCardThree = css``;
 
 export const CardsContainer = css`
 	display: flex;
@@ -132,5 +85,10 @@ export const CardsContainer = css`
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
+	}
+
+	${MEDIA_QUERIES.tabletLandUp} {
+		flex-wrap: nowrap;
+		gap: 48px;
 	}
 `;

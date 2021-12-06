@@ -2,13 +2,12 @@
 	import antony from '$assets/antony.png';
 	import eric from '$assets/eric.png';
 	import SectionHeader from '$components/common/SectionHeader.svelte';
+	import SEO from '$components/seo/index.svelte';
 	import * as S from './styles';
 	export const prerender = true;
 </script>
 
-<svelte:head>
-	<title>Home</title>
-</svelte:head>
+<SEO title="Lotus Solutions - About" />
 
 <section>
 	<div class={S.Container}>

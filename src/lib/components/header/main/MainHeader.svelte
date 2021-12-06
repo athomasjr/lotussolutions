@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import Logo from '$assets/logo.svg';
+	import Logo from '$assets/logo.png';
 	import Links from '$constants/links';
 	import * as S from './mainHeaderStyles';
 	let dark;
@@ -8,7 +8,6 @@
 	let selected = tabs[0];
 
 	$: dark = $page.path === '/' ? false : true;
-	$: console.log($page);
 </script>
 
 <header class:dark class={S.Header}>
@@ -28,6 +27,9 @@
 </header>
 
 <style>
+	img {
+		width: 150px;
+	}
 	.dark {
 		background-color: #2f2e38;
 	}
