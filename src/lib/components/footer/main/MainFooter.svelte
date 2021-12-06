@@ -1,6 +1,7 @@
 <script>
 	import Socials from '$components/common/Socials.svelte';
 	import resources from '$constants/footerLinks';
+	import siteMeta from '$site/siteMeta';
 	import * as S from './mainFooterStyles';
 </script>
 
@@ -21,8 +22,10 @@
 					{#each resource.links as link}
 						{#if link.icon}
 							<li class={S.ContactInfo}>
-								<img src={link.icon} alt={link.alt} />
-								<p>{link.text}</p>
+								<a class="email" href={`mailto:${siteMeta.contact.email}`}>
+									<img src={link.icon} alt={link.alt} />
+									<p>{link.text}</p>
+								</a>
 							</li>
 						{:else}
 							<li>
@@ -35,3 +38,10 @@
 		{/each}
 	</div>
 </footer>
+
+<style>
+	.email {
+		display: flex;
+		gap: 8px;
+	}
+</style>

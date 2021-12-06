@@ -3,13 +3,11 @@
 	import Contact from '$components/contact/Contact.svelte';
 	import Hero from '$components/hero/Hero.svelte';
 	import Process from '$components/process/Process.svelte';
+	import SEO from '$components/seo/index.svelte';
 	import Services from '$components/services/Services.svelte';
 </script>
 
-<svelte:head>
-	<title>Home</title>
-</svelte:head>
-
+<SEO title="Lotus Solutions - Change How Your Customers Define Experience" />
 <Hero />
 <Services />
 <Process />

@@ -8,7 +8,7 @@
 
 	<div class={S.Container} bind:clientHeight={bgImgH}>
 		<div class={S.Content}>
-			<h1>Be the Reason Customers Define Experience Differently</h1>
+			<h1>Be the Reason Customers Define <span>Experience</span> Differently</h1>
 			<a class={S.CTA} href="#contact">Get Started</a>
 		</div>
 	</div>

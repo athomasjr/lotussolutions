@@ -26,11 +26,14 @@ export const Wrapper = css`
 	background: ${background.dark};
 
 	${MEDIA_QUERIES.tabletUp} {
-		max-width: 250px;
 		min-height: 420px;
 	}
-	${MEDIA_QUERIES.bigDesktopUp} {
-		max-width: 295px;
+	${MEDIA_QUERIES.tabletLandUp} {
+		width: 250px;
+	}
+
+	${MEDIA_QUERIES.desktopUp} {
+		width: 295px;
 	}
 `;
 

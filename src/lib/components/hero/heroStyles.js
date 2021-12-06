@@ -1,4 +1,4 @@
-import heroImage from '$assets/herocustomer.png';
+import heroImage from '$assets/hero3.png';
 import { COLORS, MEDIA_QUERIES } from '$styles/constants';
 import { css } from '@emotion/css';
 
@@ -12,6 +12,7 @@ export const BackgroundImg = css`
 	background-position: center;
 	background-repeat: no-repeat;
 	z-index: -1;
+	max-width: 100%;
 `;
 
 export const Container = css`
@@ -35,6 +36,19 @@ export const Content = css`
 	h1 {
 		font-size: 2rem;
 		color: #ffffff;
+	}
+
+	span {
+		position: relative;
+		&:after {
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 4px;
+			background-color: ${COLORS.primary};
+			bottom: -8px;
+			left: 0;
+		}
 	}
 
 	${MEDIA_QUERIES.tabletUp} {

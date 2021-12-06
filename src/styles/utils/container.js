@@ -8,9 +8,9 @@ export const Container = css`
 		padding: 40px 64px 64px;
 	}
 	${MEDIA_QUERIES.desktopUp} {
-		padding: 146px 146px 80px;
+		padding: 80px 146px;
 	}
 	${MEDIA_QUERIES.bigDesktopUp} {
-		padding: 146px 290px 80px;
+		padding: 80px 290px;
 	}
 `;

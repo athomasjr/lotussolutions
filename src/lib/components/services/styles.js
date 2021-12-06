@@ -73,6 +73,9 @@ export const Services = css`
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
+	${MEDIA_QUERIES.tabletLandUp} {
+		flex-wrap: nowrap;
+	}
 `;
 
 // Slider
