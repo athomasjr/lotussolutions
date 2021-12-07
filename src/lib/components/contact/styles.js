@@ -33,6 +33,7 @@ export const Form = css`
 	}
 	${MEDIA_QUERIES.phoneOnly} {
 		min-width: 90%;
+		padding: 0;
 	}
 `;
 
