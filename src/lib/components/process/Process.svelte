@@ -44,7 +44,7 @@
 			whiteText
 			titleMain="How It"
 			titleAccent="Works"
-			subText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nunc feugiat orci diam feugiat cras. Neque ipsum pharetra risus"
+			subText="A workflow that gets you from Idea to launch fast and efficiently; we focus on the details, so you don't have to."
 		/>
 
 		<div class={S.CardsContainer}>
