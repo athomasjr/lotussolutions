@@ -116,7 +116,7 @@
 		Component = bind(NewComponent, newProps);
 		state = { ...defaultState, ...options };
 		updateStyleTransition();
-		disableScroll();
+		// disableScroll();
 		onOpen = (event) => {
 			if (callback.onOpen) callback.onOpen(event);
 			dispatch('open');
@@ -142,7 +142,7 @@
 		onClose = callback.onClose || onClose;
 		onClosed = callback.onClosed || onClosed;
 		Component = null;
-		enableScroll();
+		// enableScroll();
 	};
 
 	const handleKeydown = (event) => {
