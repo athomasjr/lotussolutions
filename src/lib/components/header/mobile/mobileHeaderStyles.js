@@ -59,3 +59,8 @@ export const MobileNav = css`
 		font-size: 1.8rem;
 	}
 `;
+
+export const Logo = css`
+	width: 100px;
+	margin-right: -2rem;
+`;

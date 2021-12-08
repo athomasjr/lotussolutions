@@ -1,6 +1,8 @@
 <script>
 	import Links from '$constants/links';
 	import { MobileHeader, MobileMenu, MobileNav, SideBar } from './mobileHeaderStyles';
+	import Logo from '$assets/logo.png';
+	import * as S from './mobileHeaderStyles';
 
 	let showSideBar = false;
 </script>
@@ -15,6 +17,9 @@
 		<div />
 		<div />
 	</button>
+	<a href="/">
+		<img class={S.Logo} src={Logo} alt="logo" />
+	</a>
 	<aside class={SideBar} class:open={showSideBar}>
 		<nav class={MobileNav}>
 			<ul>
