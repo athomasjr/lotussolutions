@@ -8,7 +8,7 @@
 	import Modal from '../lib/components/modal/Modal.svelte';
 </script>
 
-<SEO title="Lotus Solutions - Change How Your Customers Define Experience" />
+<SEO title="Lotus Solutions - Change " />
 <Hero />
 <Modal>
 	<Services />

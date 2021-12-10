@@ -1,11 +1,11 @@
 <script>
-	export let styles;
+	// export let styles;
 	export let heading;
 	export let text;
 	export let icon;
 </script>
 
-<div id="card" class={styles}>
+<div id="card">
 	<div class="heading">
 		<img src={icon.icon} alt={icon.alt} />
 		<h3>{heading}</h3>

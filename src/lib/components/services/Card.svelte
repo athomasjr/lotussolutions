@@ -4,15 +4,14 @@
 	export let description;
 	export let backgroundColor;
 	export let modalDesc;
-	import * as S from './cardStyles';
-
-	import { fly } from 'svelte/transition';
-	import Popup from '../modal/Popup.svelte';
+	export let features;
 	import { getContext } from 'svelte';
+	import Popup from '../modal/Popup.svelte';
+	import * as S from './cardStyles';
 	const { open } = getContext('simple-modal');
 
 	const showPopup = () => {
-		open(Popup, { message: name, modalDesc: modalDesc });
+		open(Popup, { message: name, modalDesc: modalDesc, features: features });
 	};
 </script>
 
@@ -25,7 +24,7 @@
 		{description}
 	</p>
 	<button on:click={showPopup} class:white-shadow={!backgroundColor} class={S.Btn}>
-		Learn More
+		More Info
 	</button>
 </div>
 
