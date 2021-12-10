@@ -1,4 +1,5 @@
 <script>
+	import FacebookChat from '$components/facebook-chat/FacebookChat.svelte';
 	import Footer from '$components/footer/Footer.svelte';
 	import Header from '$components/header/Header.svelte';
 	import '$styles/app.js';
@@ -26,4 +27,5 @@
 	</main>
 
 	<Footer />
+	<FacebookChat />
 </div>
