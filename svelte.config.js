@@ -1,6 +1,6 @@
 /** @type {import('@sveltejs/kit').Config} */
 import image from '@rollup/plugin-image';
-import adapter from '@sveltejs/adapter-vercel';
+import adapter from '@sveltejs/adapter-netlify';
 // import adapter from '@sveltejs/adapter-static';
 import path from 'path';
 
