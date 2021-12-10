@@ -1,41 +1,9 @@
 <script>
-	import one from '$assets/1.png';
-	import two from '$assets/2.png';
-	import three from '$assets/3.png';
+	import processes from '$constants/processes';
 	import { Container } from '$styles/utils/container';
 	import SectionHeader from '../common/SectionHeader.svelte';
 	import ProcessCard from './ProcessCard.svelte';
 	import * as S from './processStyles';
-
-	const processes = [
-		{
-			styles: S.ProcessCardOne,
-			icon: {
-				icon: one,
-				alt: 'The number one'
-			},
-			heading: 'Goals & Features',
-			text: 'Define the experience you want to deliver to your customers. We review the essential features, platforms, and your target audience.'
-		},
-		{
-			styles: S.ProcessCardTwo,
-			icon: {
-				icon: two,
-				alt: 'The number one'
-			},
-			heading: 'Develop & Review',
-			text: `We Develop your application with your vision and business' success as the top priorities. We implement a milestone review system to ensure efficient delivery.`
-		},
-		{
-			styles: S.ProcessCardThree,
-			icon: {
-				icon: three,
-				alt: 'The number one'
-			},
-			heading: 'Launch & Support',
-			text: 'Start delivering lasting experiences to your customers. We use industry-leading tools to ensure you reach your customers secure and fast.'
-		}
-	];
 </script>
 
 <section id="process">
@@ -44,7 +12,7 @@
 			whiteText
 			titleMain="How It"
 			titleAccent="Works"
-			subText="A workflow that gets you from Idea to launch fast and efficiently; we focus on the details, so you don't have to."
+			subText="Get started now, without breaking a sweat."
 		/>
 
 		<div class={S.CardsContainer}>

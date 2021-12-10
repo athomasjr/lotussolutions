@@ -15,8 +15,8 @@
 
 <script>
 	import * as svelte from 'svelte';
-	import { fade } from 'svelte/transition';
 	import { createEventDispatcher } from 'svelte';
+	import { fade } from 'svelte/transition';
 
 	const dispatch = createEventDispatcher();
 
@@ -293,7 +293,8 @@
 		margin: 2rem auto;
 		color: black;
 		border-radius: 0.5rem;
-		background: white;
+		background: linear-gradient(90deg, #ece9e6 -1.11%, #ffffff 100%);
+		padding: 24px;
 	}
 
 	.content {
